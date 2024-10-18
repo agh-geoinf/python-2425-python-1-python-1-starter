@@ -1,0 +1,46 @@
+site_name: Programowanie w języku Python
+repo_url: https://github.com/agh-geoinf/python-1-starter
+
+copyright: Copyright 2024 Jakub Staszel KGiIS AGH
+
+language: pl
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+nav:
+  - Strona główna: index.md
+  - Zajęcia 2:
+    - Przypisania: zaj2/przypisania.md
+    - Pętle: zaj2/petle.md
+    - Funkcje cz. 1: zaj2/funkcje.md
